@@ -3,7 +3,7 @@ import { BASE_URL } from "../../App";
 const SearchResult = ({ data }) => {
   return (
     <FoodCardContainer>
-      <Container>
+      {/* <Container> */}
         <FoodCards>
           {data?.map(({ name, image, text, price }) => (
             <FoodCard key={name}>
@@ -20,7 +20,7 @@ const SearchResult = ({ data }) => {
             </FoodCard>
           ))}
         </FoodCards>
-      </Container>
+      {/* </Container> */}
     </FoodCardContainer>
   );
 };
@@ -28,7 +28,7 @@ const SearchResult = ({ data }) => {
 export default SearchResult;
 const FoodCardContainer = styled.section`
   min-height: calc(100vh - 210px);
-  background-image: url("/bg.png");
+  background-image: url();
   background-size: cover;
 `;
 const FoodCards = styled.div`

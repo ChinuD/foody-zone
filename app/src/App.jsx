@@ -1,7 +1,6 @@
 import { useState,useEffect } from "react";
 import styled from "styled-components";
 import SearchResult from "./components/SearchResult/SearchResult";
-// import FoodyZone from '../public'
 
 export const BASE_URL = 'http://localhost:9000';
 
@@ -56,7 +55,7 @@ if(loading){
           </div>
         </TopContainer>
 
-        {/* <FilterContainer>
+        <FilterContainer>
           {filterBtns.map((value) => (
             <Button
               isSelected={selectedBtn === value.type}
@@ -65,7 +64,7 @@ if(loading){
               {value.name}
             </Button>
           ))}
-        </FilterContainer>*/}
+        </FilterContainer>
       <SearchResult data={data} />
       </Container> 
     </>
@@ -74,7 +73,7 @@ if(loading){
 
 export default App;
 
-const Container = styled.div`
+export const Container = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 `;
